@@ -1,0 +1,50 @@
+package:
+  name: ffc
+  version: "1.5.0"
+
+source:
+  fn: ffc-1.5.0.tar.gz
+  url: https://bitbucket.org/fenics-project/ffc/downloads/ffc-1.5.0.tar.gz
+  md5: 343f6d30e7e77d329a400fd8e73e0b63
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - numpy
+    - swig
+
+  run:
+    - python
+    - numpy
+    - swig
+    - ufl ==1.5.0
+    - fiat ==1.5.0
+    - instant ==1.5.0
+
+test:
+  imports:
+    - ffc
+    - ffc.backends
+    - ffc.backends.dolfin
+    - ffc.backends.ufc
+    - ffc.errorcontrol
+    - ffc.quadrature
+    - ffc.tensor
+    #- ffc_time_ext.time_elements_ext  # See #47
+    - ufc
+    - ufc._ufc
+
+  commands:
+    - ffc
+
+about:
+  home: http://fenicsproject.org/
+  license: The GNU Lesser General Public License, version 3.0
+  summary: 'The FEniCS Form Compiler'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
