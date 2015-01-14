@@ -8,7 +8,7 @@ source:
   md5: 343f6d30e7e77d329a400fd8e73e0b63
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -38,7 +38,7 @@ test:
     - ufc._ufc
 
   commands:
-    - ffc
+    - ffc --help
 
 about:
   home: http://fenicsproject.org/
