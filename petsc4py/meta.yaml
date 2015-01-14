@@ -1,0 +1,38 @@
+package:
+  name: petsc4py
+  version: "3.5.1"
+
+source:
+  fn: petsc4py-3.5.1.tar.gz
+  url: https://bitbucket.org/petsc/petsc4py/downloads/petsc4py-3.5.1.tar.gz
+  md5: fb5e7bda87dafb2ff0ee89da56873658
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - mkl
+    - petsc ==3.5.2
+
+  run:
+    - python
+    - petsc ==3.5.2
+
+test:
+  imports:
+    - petsc4py
+    - petsc4py.lib
+
+  requires:
+    - mkl
+
+about:
+  home: https://bitbucket.org/petsc/petsc4py/
+  license: BSD License
+  summary: 'PETSc for Python'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

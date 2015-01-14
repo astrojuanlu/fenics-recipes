@@ -1,0 +1,2 @@
+cd $SRC_DIR
+make PETSC_DIR=$PREFIX PETSC_ARCH="" test
