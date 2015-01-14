@@ -11,7 +11,7 @@ source:
     - conditional_cholmod.patch
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -19,6 +19,7 @@ requirements:
     - mkl
     - cmake
     - sphinx
+    - libxml2
     - numpy
     - vtk
     - qt
@@ -32,6 +33,7 @@ requirements:
   run:
     - python
     - mkl
+    - libxml2
     - numpy
     - vtk
     - qt
