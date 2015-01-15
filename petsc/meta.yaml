@@ -1,0 +1,31 @@
+package:
+  name: petsc
+  version: "3.4.5"
+
+source:
+  fn: petsc-lite-3.4.5.tar.gz
+  url: http://ftp.mcs.anl.gov/pub/petsc/release-snapshots/petsc-lite-3.4.5.tar.gz
+  md5: 9b454253e587aa95096d8a9df615ab09
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - mkl
+    - mpi4py
+
+  run:
+    - python
+    - mkl
+    - mpi4py
+
+about:
+  home: http://www.mcs.anl.gov/petsc/
+  license: PETSc
+  summary: 'PETSc: Portable, Extensible Toolkit for Scientific Computation'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

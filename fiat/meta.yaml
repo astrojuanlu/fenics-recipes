@@ -1,0 +1,36 @@
+package:
+  name: fiat
+  version: "1.4.0"
+
+source:
+  fn: fiat-1.4.0.tar.gz
+  url: https://bitbucket.org/fenics-project/fiat/downloads/fiat-1.4.0.tar.gz
+  md5: da9c38cf394594091ec4ac2ff652e170
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+    - numpy <1.9
+    - scientificpython
+
+test:
+  imports:
+    - FIAT
+
+  requires:
+    - nose
+
+about:
+  home: http://fenicsproject.org/
+  license: The GNU Lesser General Public License, version 3.0
+  summary: 'FInite element Automatic Tabulator'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

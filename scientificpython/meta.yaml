@@ -1,0 +1,36 @@
+package:
+  name: scientificpython
+  version: "2.9.4"
+
+source:
+  fn: ScientificPython-2.9.4.tar.gz
+  url: https://sourcesup.renater.fr/frs/download.php/4570/ScientificPython-2.9.4.tar.gz
+  md5: dc2987089e106cb807b4ccecf7adc071
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - numpy <1.9
+
+  run:
+    - python
+    - numpy <1.9
+
+test:
+  imports:
+    - Scientific
+
+  requires:
+    - nose
+
+about:
+  home: http://dirac.cnrs-orleans.fr/plone/software/scientificpython/
+  license: GNU General Public License v2 (GPLv2)
+  summary: 'Various Python modules for scientific computing'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

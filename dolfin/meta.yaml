@@ -1,0 +1,63 @@
+package:
+  name: dolfin
+  version: "1.4.0"
+
+source:
+  fn: dolfin-1.4.0.tar.gz
+  url: https://bitbucket.org/fenics-project/dolfin/downloads/dolfin-1.4.0.tar.gz
+  md5: b736119d524590b6bd0484f09893e018
+
+  patches:
+    - fix_find_scotch.patch
+    - conditional_cholmod.patch
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - mkl
+    - cmake
+    - sphinx
+    - libxml2
+    - numpy <1.9
+    - vtk
+    - qt
+    - ffc ==1.4.0
+    - ply
+    - boost
+    - eigen3
+    - petsc <=3.4.5
+    - petsc4py <=3.4
+
+  run:
+    - python
+    - mkl
+    - libxml2
+    - numpy <1.9
+    - vtk
+    - qt
+    - ffc ==1.4.0
+    - ufl ==1.4.0
+    - ply
+    - boost
+    - eigen3
+    - petsc <=3.4.5
+    - petsc4py <=3.4
+
+test:
+  imports:
+    - dolfin
+
+  requires:
+    - mkl
+
+about:
+  home: http://www.fenicsproject.org
+  license: The GNU Lesser General Public License, version 3.0
+  summary: 'C++/Python library for solving differential equations'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

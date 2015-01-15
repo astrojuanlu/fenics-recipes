@@ -1,0 +1,38 @@
+package:
+  name: petsc4py
+  version: "3.4"
+
+source:
+  git_url: https://bitbucket.org/petsc/petsc4py/
+  git_tag: maint-3.4
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - mkl
+    - cython
+    - petsc ==3.4.5
+
+  run:
+    - python
+    - petsc ==3.4.5
+
+test:
+  imports:
+    - petsc4py
+    - petsc4py.lib
+
+  requires:
+    - mkl
+
+about:
+  home: https://bitbucket.org/petsc/petsc4py/
+  license: BSD License
+  summary: 'PETSc for Python'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml

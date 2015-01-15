@@ -1,0 +1,44 @@
+package:
+  name: ufl
+  version: "1.4.0"
+
+source:
+  fn: ufl-1.4.0.tar.gz
+  url: https://bitbucket.org/fenics-project/ufl/downloads/ufl-1.4.0.tar.gz
+  md5: 4c04628f3dd8e68bbfe7af0f4ed583eb
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+
+  run:
+    - python
+    - six
+
+test:
+  imports:
+    - ufl
+    - ufl.finiteelement
+    - ufl.algorithms
+
+  commands:
+#    - ufl-convert --help  # See #55
+    - ufl-version
+    - ufl2py --help
+#    - form2ufl --help  # See #56
+
+  requires:
+    - pytest
+
+
+about:
+  home: http://www.fenicsproject.org
+  license: The GNU Lesser General Public License, version 3.0
+  summary: 'Unified Form Language'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
