@@ -13,6 +13,7 @@ requirements:
   build:
     - python
     - mkl
+    - numpy <1.9
     - cython
     - petsc ==3.4.5
 

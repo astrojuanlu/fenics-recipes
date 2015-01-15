@@ -14,12 +14,18 @@ requirements:
   build:
     - python
     - mkl
+    - numpy <1.9
     - mpi4py
 
   run:
     - python
     - mkl
+    - numpy <1.9
     - mpi4py
+
+test:
+  requires:
+    - mkl
 
 about:
   home: http://www.mcs.anl.gov/petsc/

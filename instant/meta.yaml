@@ -16,7 +16,7 @@ requirements:
 
   run:
     - python
-    - numpy
+    - numpy <1.9
     - cmake
     - swig
 
