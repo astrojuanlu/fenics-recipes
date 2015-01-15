@@ -1,0 +1,19 @@
+package:
+  name: fenics
+  version: "1.4.0"
+
+requirements:
+  run:
+    - dolfin ==1.4.0
+    - ffc ==1.4.0
+    - fiat ==1.4.0
+    - ufl ==1.4.0
+    - instant ==1.4.0
+
+about:
+  home: http://www.fenicsproject.org
+  summary: 'FEniCS is a collection of free software for automated, efficient solution of differential equations'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
