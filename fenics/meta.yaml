@@ -2,6 +2,9 @@ package:
   name: fenics
   version: "1.4.0"
 
+build:
+  number: 1
+
 requirements:
   run:
     - dolfin ==1.4.0
@@ -9,6 +12,7 @@ requirements:
     - fiat ==1.4.0
     - ufl ==1.4.0
     - instant ==1.4.0
+    - boost ==1.55.0
 
 about:
   home: http://www.fenicsproject.org
