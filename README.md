@@ -18,10 +18,7 @@ fast installation or even redistribution.
 
 ```
 $ conda install conda-build
-$ conda build \
-{boost,eigen3,petsc,petsc4py,scientificpython,\
-instant,ufl,fiat,ffc,dolfin,fenics} \
---python 27
+$ conda build boost eigen3 petsc petsc4py scientificpython instant ufl fiat ffc dolfin fenics --python 27
 $ conda install fenics mkl --use-local
 ```
 
