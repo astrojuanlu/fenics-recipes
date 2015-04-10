@@ -9,6 +9,7 @@ requirements:
     - fiat ==1.5.0
     - ufl ==1.5.0
     - instant ==1.5.0
+    - boost ==1.55.0
 
 about:
   home: http://www.fenicsproject.org
