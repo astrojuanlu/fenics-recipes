@@ -12,6 +12,13 @@ source:
 build:
   number: 1
 
+requirements:
+  build:
+    - mpich2
+
+  run:
+    - mpich2
+
 about:
   home: http://www.labri.fr/perso/pelegrin/scotch/
   license: CeCILL-C

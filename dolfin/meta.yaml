@@ -12,7 +12,7 @@ source:
     - conditional_cholmod.patch
 
 build:
-  number: 1
+  number: 3
 
 requirements:
   build:
@@ -24,6 +24,7 @@ requirements:
     - numpy <1.9
     - vtk
     - qt
+    - scotch
     - ffc ==1.4.0
     - ply
     - boost ==1.55.0
@@ -39,6 +40,7 @@ requirements:
     - numpy <1.9
     - vtk
     - qt
+    - scotch
     - ffc ==1.4.0
     - ufl ==1.4.0
     - ply

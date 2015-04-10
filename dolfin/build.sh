@@ -6,7 +6,7 @@ cd build
 export BLAS_DIR=$LIBRARY_PATH
 export AMD_DIR=$SP_DIR/petsc
 export UMFPACK_DIR=$SP_DIR/petsc
-export SCOTCH_DIR=$SP_DIR/scotch
+export SCOTCH_DIR=$PREFIX
 
 cmake .. \
   -DCMAKE_INSTALL_PREFIX=$PREFIX \
@@ -15,5 +15,6 @@ cmake .. \
   -DQT_QMAKE_EXECUTABLE=$PREFIX/bin/qmake \
   -DQT_UIC_EXECUTABLE=$PREFIX/bin/uic \
   -DQT_MOC_EXECUTABLE=$PREFIX/bin/moc \
-  -DQT_RCC_EXECUTABLE=$PREFIX/bin/rcc
+  -DQT_RCC_EXECUTABLE=$PREFIX/bin/rcc \
+  -DDOLFIN_ENABLE_SCOTCH:BOOL=ON
 make install
