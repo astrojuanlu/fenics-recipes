@@ -30,6 +30,7 @@ requirements:
     - eigen3
     - petsc <=3.4.5
     - petsc4py <=3.4
+    - slepc <=3.4.4
 
   run:
     - python
@@ -45,6 +46,7 @@ requirements:
     - eigen3
     - petsc <=3.4.5
     - petsc4py <=3.4
+    - slepc <=3.4.4
 
 test:
   imports:

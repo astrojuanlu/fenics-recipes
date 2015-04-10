@@ -9,7 +9,11 @@ the Anaconda Python distribution.
 Packages are generated for linux-64 in the juanlu001 binstar channel.
 To install them, just type:
 
-`$ conda install fenics mkl --channel juanlu001`
+```
+$ conda config --add channels juanlu001
+$ conda config --add https://conda.binstar.org/juanlu001/channel/fenics:1.4.0:centos
+$ conda install fenics mkl
+```
 
 ## Local building
 
@@ -18,7 +22,7 @@ fast installation or even redistribution.
 
 ```
 $ conda install conda-build
-$ conda build boost eigen3 petsc petsc4py scientificpython instant ufl fiat ffc dolfin fenics --python 27
+$ conda build boost eigen3 petsc petsc4py slepc scientificpython instant ufl fiat ffc dolfin fenics --python 27
 $ conda install fenics mkl --use-local
 ```
 
