@@ -25,7 +25,7 @@ requirements:
     - qt
     - ffc ==1.5.0
     - ply
-    - boost
+    - boost ==1.55.0
     - eigen3
     - petsc <=3.5.2
     - petsc4py <=3.5.1
@@ -40,7 +40,7 @@ requirements:
     - ffc ==1.5.0
     - ufl ==1.5.0
     - ply
-    - boost
+    - boost ==1.55.0
     - eigen3
     - petsc <=3.5.2
     - petsc4py <=3.5.1
