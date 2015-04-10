@@ -3,8 +3,9 @@ package:
   version: "3.4"
 
 source:
-  git_url: https://bitbucket.org/petsc/petsc4py/
-  git_tag: maint-3.4
+  fn: maint-3.4.zip
+  url: https://bitbucket.org/petsc/petsc4py/get/maint-3.4.zip
+  sha1: a4ed6bc295d61dbe73817fcb423f33548c72e8f2
 
 build:
   number: 1
