@@ -12,7 +12,7 @@ To install them, just type:
 ```
 $ conda config --add channels juanlu001
 $ conda config --add https://conda.binstar.org/juanlu001/channel/fenics:1.4.0:centos
-$ conda install fenics mkl
+$ conda install "fenics==1.4" mkl
 ```
 
 ## Local building
