@@ -20,6 +20,10 @@ $ conda install "fenics==1.4" mkl
 The recipes allow for building the packages locally, for later
 fast installation or even redistribution.
 
+First of all, [download a ZIP version of this repository](https://github.com/Juanlu001/fenics-recipes/archive/maint-1.4.0.zip),
+extract it to your preferred location and run these commands:
+
+
 ```
 $ conda install conda-build
 $ conda build boost eigen3 scotch petsc petsc4py slepc scientificpython instant ufl fiat ffc dolfin fenics --python 27
