@@ -22,10 +22,45 @@ $ conda build boost eigen3 petsc petsc4py instant ufl fiat ffc dolfin fenics --p
 $ conda install fenics mkl --use-local
 ```
 
-Requirements
+Requirements:
 
 * GCC (C, C++ and Fortran)
 * Bash (Anaconda only works with this shell)
+
+## FAQ
+
+### "Error: No packages found matching ..." when installing
+
+You probably forgot to specify the channel, or to add them to your conda
+configuration, as explained above.
+
+### `ImportError: /lib64/libc.so.6: version 'GLIBC_2.14' not found`
+
+Maybe you installed the latest FEniCS version but your system is too old.
+Try to install FEniCS 1.4.0 from the channel
+https://conda.binstar.org/juanlu001/channel/fenics:1.4.0:centos as explained
+above.
+
+### `ImportError: ... cannot open shared object file: No such file or directory`
+
+There is some sort of linking problem in your system. Perhaps you have
+to install some of the Boost system requirements, specially libbz2. To diagnose
+this problem you can use the `ldd` utility:
+
+`ldd <INSTALL_PATH>/anaconda/envs/fenics27/lib/python2.7/site-packages/dolfin/cpp/_common.so`
+
+### `DOLFIN runtime dependency is not met. Install the following python module: 'ffc' and make sure its location is listed in PYTHONPATH`
+
+Many times this error has nothing to do with FFC being not installed. Please try
+
+`>>> import ffc`
+
+in a Python session to see the real problem.
+
+### My error is not listed above
+
+Please open an issue at https://github.com/juanlu001/fenics-recipes/issues.
+In the meanwhile, you can try and build your own conda packages from the recipes.
 
 ## References
 
