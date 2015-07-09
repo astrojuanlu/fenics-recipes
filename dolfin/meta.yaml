@@ -9,6 +9,7 @@ source:
 
   patches:
     - conditional_cholmod.patch
+    - 0001-Fix-issue-525-where-the-micro-and-minor-part-of-the-.patch
 
 build:
   number: 3
