@@ -12,7 +12,7 @@ source:
     - 0001-Fix-issue-525-where-the-micro-and-minor-part-of-the-.patch
 
 build:
-  number: 3
+  number: 2
 
 requirements:
   build:
@@ -30,6 +30,7 @@ requirements:
     - eigen3
     - petsc <=3.5.2
     - petsc4py <=3.5.1
+    - slepc <=3.5.4
 
   run:
     - python
@@ -45,6 +46,7 @@ requirements:
     - eigen3
     - petsc <=3.5.2
     - petsc4py <=3.5.1
+    - slepc <=3.5.4
 
 test:
   imports:

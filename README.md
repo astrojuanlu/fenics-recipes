@@ -18,7 +18,7 @@ fast installation or even redistribution.
 
 ```
 $ conda install conda-build
-$ conda build eigen3 petsc petsc4py instant ufl fiat ffc dolfin fenics --python 27
+$ conda build eigen3 petsc petsc4py slepc instant ufl fiat ffc dolfin fenics --python 2.7
 $ conda install fenics mkl --use-local
 ```
 
@@ -29,7 +29,7 @@ Requirements:
 
 ## FAQ
 
-### "Error: No packages found matching ..." when installing
+### `Error: No packages found matching ...` when installing
 
 You probably forgot to specify the channel, or to add them to your conda
 configuration, as explained above.

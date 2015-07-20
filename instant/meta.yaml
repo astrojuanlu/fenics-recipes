@@ -17,7 +17,9 @@ requirements:
   run:
     - python
     - numpy
+    #- make
     - cmake
+    #- pkg-config
     - swig
 
 test:
