@@ -10,8 +10,8 @@ Subject: [PATCH] Fix issue 525 where the micro and minor part of the python
 
 diff --git a/dolfin/swig/version.i b/dolfin/swig/version.i
 index 8dace25..6d65aac 100644
---- a/dolfin/swig/version.i
-+++ b/dolfin/swig/version.i
+--- dolfin/swig/version.i
++++ dolfin/swig/version.i
 @@ -33,6 +33,6 @@ unsigned int dolfin_pythonversion() { return  PY_VERSION_HEX; }
  tmp = hex(dolfin_swigversion())
  __swigversion__ = "%d.%d.%d"%(tuple(map(int, [tmp[-5], tmp[-3], tmp[-2:]])))
