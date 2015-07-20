@@ -1,0 +1,29 @@
+package:
+  name: slepc
+  version: "3.5.4"
+
+source:
+  fn: slepc-3.5.4.tar.gz
+  url: http://www.grycap.upv.es/slepc/download/distrib/slepc-3.5.4.tar.gz#egg=slepc-3.5.4
+  md5: a67ba8f7f385cc9bc37e829e046d0490
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - petsc <=3.5.2
+
+  run:
+    - python
+    - petsc <=3.5.2
+
+about:
+  home: http://www.grycap.upv.es/slepc/
+  license: GNU Library or Lesser General Public License (LGPL)
+  summary: 'SLEPc: Scalable Library for Eigenvalue Problem Computations'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
