@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export LIBRARY_PATH=$PREFIX/lib
+
 ./configure \
   --prefix=$PREFIX \
   --with-blas-lapack-dir=$LIBRARY_PATH \

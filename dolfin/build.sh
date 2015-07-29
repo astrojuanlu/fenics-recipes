@@ -3,6 +3,9 @@
 mkdir build
 cd build
 
+export LIBRARY_PATH=$PREFIX/lib
+export INCLUDE_PATH=$PREFIX/include
+
 export BLAS_DIR=$LIBRARY_PATH
 export AMD_DIR=$SP_DIR/petsc
 export UMFPACK_DIR=$SP_DIR/petsc
