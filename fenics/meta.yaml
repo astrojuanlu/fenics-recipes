@@ -1,14 +1,14 @@
 package:
   name: fenics
-  version: "1.5.0"
+  version: "1.6.0"
 
 requirements:
   run:
-    - dolfin ==1.5.0
-    - ffc ==1.5.0
-    - fiat ==1.5.0
-    - ufl ==1.5.0
-    - instant ==1.5.0
+    - dolfin ==1.6.0
+    - ffc ==1.6.0
+    - fiat ==1.6.0
+    - ufl ==1.6.0
+    - instant ==1.6.0
 
 about:
   home: http://www.fenicsproject.org

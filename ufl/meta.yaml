@@ -1,11 +1,11 @@
 package:
   name: ufl
-  version: "1.5.0"
+  version: "1.6.0"
 
 source:
-  fn: ufl-1.5.0.tar.gz
-  url: https://bitbucket.org/fenics-project/ufl/downloads/ufl-1.5.0.tar.gz
-  md5: 130d7829cf5a4bd5b52bf6d0955116fd
+  fn: ufl-1.6.0.tar.gz
+  url: https://bitbucket.org/fenics-project/ufl/downloads/ufl-1.6.0.tar.gz
+  md5: c40c5f04eaa847377ab2323122284016
 
 build:
   number: 1

@@ -1,18 +1,14 @@
 package:
   name: dolfin
-  version: "1.5.0"
+  version: "1.6.0"
 
 source:
-  fn: dolfin-1.5.0.tar.gz
-  url: https://bitbucket.org/fenics-project/dolfin/downloads/dolfin-1.5.0.tar.gz
-  md5: 071a4a2ca3c2fc00657bd09457ebed54
-
-  patches:
-    - conditional_cholmod.patch
-    - 0001-Fix-issue-525-where-the-micro-and-minor-part-of-the-.patch
+  fn: dolfin-1.6.0.tar.gz
+  url: https://bitbucket.org/fenics-project/dolfin/downloads/dolfin-1.6.0.tar.gz
+  md5: 35cb4baf7ab4152a40fb7310b34d5800
 
 build:
-  number: 2
+  number: 1
 
 requirements:
   build:
@@ -21,10 +17,11 @@ requirements:
     - cmake
     - sphinx
     - libxml2
+    - swig >=3.0.3
     - numpy
     - vtk
     - qt
-    - ffc ==1.5.0
+    - ffc ==1.6.0
     - ply
     - boost
     - eigen3
@@ -36,11 +33,12 @@ requirements:
     - python
     - mkl
     - libxml2
+    - swig >=3.0.3
     - numpy
     - vtk
     - qt
-    - ffc ==1.5.0
-    - ufl ==1.5.0
+    - ffc ==1.6.0
+    - ufl ==1.6.0
     - ply
     - boost
     - eigen3

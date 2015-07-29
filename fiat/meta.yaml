@@ -1,11 +1,11 @@
 package:
   name: fiat
-  version: "1.5.0"
+  version: "1.6.0"
 
 source:
-  fn: fiat-1.5.0.tar.gz
-  url: https://bitbucket.org/fenics-project/fiat/downloads/fiat-1.5.0.tar.gz
-  md5: da3fa4dd8177bb251e7f68ec9c7cf6c5
+  fn: fiat-1.6.0.tar.gz
+  url: https://bitbucket.org/fenics-project/fiat/downloads/fiat-1.6.0.tar.gz
+  md5: f4509d05c911fd93cea8d288a78a6c6f
 
 build:
   number: 1
@@ -13,6 +13,7 @@ build:
 requirements:
   build:
     - python
+    - sympy
 
   run:
     - python

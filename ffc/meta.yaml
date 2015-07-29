@@ -1,28 +1,28 @@
 package:
   name: ffc
-  version: "1.5.0"
+  version: "1.6.0"
 
 source:
-  fn: ffc-1.5.0.tar.gz
-  url: https://bitbucket.org/fenics-project/ffc/downloads/ffc-1.5.0.tar.gz
-  md5: 343f6d30e7e77d329a400fd8e73e0b63
+  fn: ffc-1.6.0.tar.gz
+  url: https://bitbucket.org/fenics-project/ffc/downloads/ffc-1.6.0.tar.gz
+  md5: 358faa3e9da62a1b1a717070217b793e
 
 build:
-  number: 2
+  number: 1
 
 requirements:
   build:
     - python
     - numpy
-    - swig
+    - swig >=3.0.3
 
   run:
     - python
     - numpy
-    - swig
-    - ufl ==1.5.0
-    - fiat ==1.5.0
-    - instant ==1.5.0
+    - swig >=3.0.3
+    - ufl ==1.6.0
+    - fiat ==1.6.0
+    - instant ==1.6.0
 
 test:
   imports:
@@ -35,7 +35,6 @@ test:
     - ffc.tensor
     #- ffc_time_ext.time_elements_ext  # See #47
     - ufc
-    - ufc._ufc
 
   commands:
     - ffc --help

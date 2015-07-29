@@ -1,11 +1,11 @@
 package:
   name: instant
-  version: "1.5.0"
+  version: "1.6.0"
 
 source:
-  fn: instant-1.5.0.tar.gz
-  url: https://bitbucket.org/fenics-project/instant/downloads/instant-1.5.0.tar.gz
-  md5: b744023ded27ee9df4a8d8c6698c0d58
+  fn: instant-1.6.0.tar.gz
+  url: https://bitbucket.org/fenics-project/instant/downloads/instant-1.6.0.tar.gz
+  md5: 5f2522eb032a5bebbad6597b6fe0732a
 
 build:
   number: 1
