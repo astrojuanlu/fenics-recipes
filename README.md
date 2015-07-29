@@ -11,8 +11,8 @@ To install them, just type:
 
 `$ conda install fenics mkl --channel juanlu001`
 
-.. warning:: While official SWIG is updated, it can be installed
-  using `conda install swig --channel roliveira`
+**Warning**: While official SWIG is updated, it can be installed
+using `conda install swig --channel roliveira`.
 
 ## Local building
 
