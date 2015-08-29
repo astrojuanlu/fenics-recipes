@@ -11,9 +11,6 @@ To install them, just type:
 
 `$ conda install fenics mkl --channel juanlu001`
 
-**Warning**: While official SWIG is updated, it can be installed
-using `conda install swig --channel roliveira`.
-
 ## Local building
 
 The recipes allow for building the packages locally, for later
@@ -21,7 +18,7 @@ fast installation or even redistribution.
 
 ```
 $ conda install conda-build
-$ conda build eigen3 petsc petsc4py slepc instant ufl fiat ffc dolfin fenics --python 2.7
+$ conda build eigen3 swig petsc petsc4py slepc instant ufl fiat ffc dolfin fenics --python 2.7
 $ conda install fenics mkl --use-local
 ```
 
