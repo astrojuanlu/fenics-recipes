@@ -1,0 +1,34 @@
+package:
+  name: mshr
+  version: "1.6.0"
+
+source:
+  fn: mshr-1.6.0.tar.gz
+  url: https://bitbucket.org/fenics-project/mshr/downloads/mshr-1.6.0.tar.gz
+  md5: 44160cccb8a006be27c8d9c33af6a397
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - python
+    - cmake
+    - dolfin
+    - gmp
+    - mpfr
+
+  run:
+    - python
+    - dolfin
+    - gmp
+    - mpfr
+
+about:
+  home: http://fenicsproject.org/
+  license: The GNU Lesser General Public License, version 3.0
+  summary: 'Mesh generation component of FEniCS'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
