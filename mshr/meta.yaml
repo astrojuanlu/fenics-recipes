@@ -24,6 +24,10 @@ requirements:
     - gmp
     - mpfr
 
+test:
+  imports:
+    - mshr
+
 about:
   home: http://fenicsproject.org/
   license: The GNU Lesser General Public License, version 3.0
