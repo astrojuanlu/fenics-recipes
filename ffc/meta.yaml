@@ -8,13 +8,14 @@ source:
   md5: 358faa3e9da62a1b1a717070217b793e
 
 build:
-  number: 2
+  number: 3
 
 requirements:
   build:
     - python
     - numpy
     - swig ==3.0.7
+    - gcc
 
   run:
     - python
