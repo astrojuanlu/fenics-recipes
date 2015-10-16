@@ -1,11 +1,11 @@
 package:
   name: petsc4py
-  version: "3.5.1"
+  version: "3.6.0"
 
 source:
-  fn: petsc4py-3.5.1.tar.gz
-  url: https://bitbucket.org/petsc/petsc4py/downloads/petsc4py-3.5.1.tar.gz
-  md5: fb5e7bda87dafb2ff0ee89da56873658
+  fn: petsc4py-3.6.0.tar.gz
+  url: https://bitbucket.org/petsc/petsc4py/downloads/petsc4py-3.6.0.tar.gz
+  md5: e63a8e30318b5de9ffb081832e9daf30
 
 build:
   number: 1
@@ -14,11 +14,11 @@ requirements:
   build:
     - python
     - mkl
-    - petsc ==3.5.2
+    - petsc ==3.6.2
 
   run:
     - python
-    - petsc ==3.5.2
+    - petsc ==3.6.2
 
 test:
   imports:

@@ -1,11 +1,11 @@
 package:
   name: petsc
-  version: "3.5.2"
+  version: "3.6.2"
 
 source:
-  fn: petsc-lite-3.5.2.tar.gz
-  url: http://ftp.mcs.anl.gov/pub/petsc/release-snapshots/petsc-lite-3.5.2.tar.gz
-  md5: d707336a98d7cb31d843804d020edc94
+  fn: petsc-lite-3.6.2.tar.gz
+  url: http://ftp.mcs.anl.gov/pub/petsc/release-snapshots/petsc-lite-3.6.2.tar.gz
+  md5: 5b6b7129ba02f4c6d107ae7671b80bb8
 
 build:
   number: 1
@@ -15,11 +15,13 @@ requirements:
     - python
     - mkl
     - mpi4py
+    - gcc
 
   run:
     - python
     - mkl
     - mpi4py
+    - gcc
 
 about:
   home: http://www.mcs.anl.gov/petsc/
