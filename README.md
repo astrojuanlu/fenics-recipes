@@ -24,7 +24,6 @@ $ conda install fenics mkl --use-local
 
 Requirements:
 
-* GCC (C, C++ and Fortran)
 * Bash (Anaconda only works with this shell)
 
 ## FAQ
