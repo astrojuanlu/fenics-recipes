@@ -8,16 +8,22 @@ source:
   md5: a67ba8f7f385cc9bc37e829e046d0490
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
     - python
+    - gcc
     - petsc <=3.5.2
 
   run:
     - python
+    - libgcc
     - petsc <=3.5.2
+
+test:
+  requires:
+    - gcc
 
 about:
   home: http://www.grycap.upv.es/slepc/
