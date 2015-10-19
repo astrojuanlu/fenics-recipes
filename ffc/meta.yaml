@@ -8,7 +8,7 @@ source:
   md5: 358faa3e9da62a1b1a717070217b793e
 
 build:
-  number: 3
+  number: 4
 
 requirements:
   build:
@@ -24,6 +24,7 @@ requirements:
     - ufl ==1.6.0
     - fiat ==1.6.0
     - instant ==1.6.0
+    - libgcc
 
 test:
   imports:

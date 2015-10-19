@@ -5,6 +5,7 @@ export LIBRARY_PATH=$PREFIX/lib
 ./configure \
   --prefix=$PREFIX \
   --with-blas-lapack-dir=$LIBRARY_PATH \
+  --with-mpi-dir=$PREFIX \
   --download-suitesparse \
   --with-shared-libraries
 make
