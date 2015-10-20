@@ -8,7 +8,7 @@ source:
   md5: 35cb4baf7ab4152a40fb7310b34d5800
 
 build:
-  number: 4
+  number: 5
 
 requirements:
   build:
@@ -19,7 +19,7 @@ requirements:
     - libxml2
     - swig ==3.0.7
     - numpy
-    - vtk <=5.10.1
+    - vtk
     - qt
     - ffc ==1.6.0
     - ply
@@ -27,7 +27,7 @@ requirements:
     - eigen3
     - petsc <=3.6.2
     - petsc4py <=3.6.0
-    - slepc <=3.5.4
+    - slepc <=3.6.2
 
   run:
     - python
@@ -35,7 +35,7 @@ requirements:
     - libxml2
     - swig ==3.0.7
     - numpy
-    - vtk <=5.10.1
+    - vtk
     - qt
     - ffc ==1.6.0
     - ufl ==1.6.0
@@ -44,7 +44,7 @@ requirements:
     - eigen3
     - petsc <=3.6.2
     - petsc4py <=3.6.0
-    - slepc <=3.5.4
+    - slepc <=3.6.2
 
 test:
   imports:
