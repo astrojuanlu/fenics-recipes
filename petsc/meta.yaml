@@ -8,18 +8,18 @@ source:
   md5: 5b6b7129ba02f4c6d107ae7671b80bb8
 
 build:
-  number: 2
+  number: 3
 
 requirements:
   build:
     - python
-    - mkl
+    - openblas
     - mpi4py
     - gcc
 
   run:
     - python
-    - mkl
+    - openblas
     - mpi4py
     - libgcc
 
