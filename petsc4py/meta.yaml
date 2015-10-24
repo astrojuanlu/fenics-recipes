@@ -8,25 +8,25 @@ source:
   md5: e63a8e30318b5de9ffb081832e9daf30
 
 build:
-  number: 1
+  number: 4
 
 requirements:
   build:
     - python
-    - mkl
+    - openblas
+    - numpy ==1.9
     - petsc ==3.6.2
 
   run:
     - python
+    - openblas
+    - numpy ==1.9
     - petsc ==3.6.2
 
 test:
   imports:
     - petsc4py
     - petsc4py.lib
-
-  requires:
-    - mkl
 
 about:
   home: https://bitbucket.org/petsc/petsc4py/

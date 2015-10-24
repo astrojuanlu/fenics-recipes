@@ -1,23 +1,28 @@
 package:
   name: slepc
-  version: "3.5.4"
+  version: "3.6.2"
 
 source:
-  fn: slepc-3.5.4.tar.gz
-  url: http://www.grycap.upv.es/slepc/download/distrib/slepc-3.5.4.tar.gz#egg=slepc-3.5.4
-  md5: a67ba8f7f385cc9bc37e829e046d0490
+  git_rev: e878de6
+  git_url: https://bitbucket.org/slepc/slepc.git
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
     - python
-    - petsc <=3.5.2
+    - gcc
+    - petsc <=3.6.2
 
   run:
     - python
-    - petsc <=3.5.2
+    - libgcc
+    - petsc <=3.6.2
+
+test:
+  requires:
+    - gcc
 
 about:
   home: http://www.grycap.upv.es/slepc/

@@ -4,7 +4,9 @@ export LIBRARY_PATH=$PREFIX/lib
 
 ./configure \
   --prefix=$PREFIX \
-  --with-blas-lapack-dir=$LIBRARY_PATH \
+  --with-lapack-lib=libopenblas.so \
+  --with-blas-lib=libopenblas.so \
+  --with-mpi-dir=$PREFIX \
   --download-suitesparse \
   --with-shared-libraries
 make
