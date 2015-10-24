@@ -9,7 +9,11 @@ the Anaconda Python distribution.
 Packages are generated for linux-64 in the juanlu001 binstar channel.
 To install them, just type:
 
-`$ conda install fenics mkl --channel juanlu001`
+`$ conda install fenics --channel juanlu001`
+
+**Note**: These binaries are portable across Linux distributions but
+are compiled without VTK support. If you want plotting capabilities,
+please consider local building.
 
 ## Local building
 
@@ -19,7 +23,7 @@ fast installation or even redistribution.
 ```
 $ conda install conda-build
 $ conda build eigen3 swig petsc petsc4py slepc instant ufl fiat ffc dolfin fenics --python 2.7
-$ conda install fenics mkl --use-local
+$ conda install fenics --use-local
 ```
 
 Requirements:
