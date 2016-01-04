@@ -13,11 +13,13 @@ build:
 requirements:
   build:
     - gcc
+    - zlib
     - pcre
     - python
 
   run:
     - libgcc
+    - zlib
     - pcre
 
 test:
