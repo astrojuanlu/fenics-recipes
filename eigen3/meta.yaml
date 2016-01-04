@@ -9,9 +9,16 @@ source:
 
 requirements:
   build:
+    - gcc
     - cmake
 
+  run:
+    - libgcc
+
 test:
+  requires:
+    - gcc
+
   files:
     - test.cc
 
