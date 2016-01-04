@@ -19,8 +19,7 @@ requirements:
     - libxml2
     - swig ==3.0.7
     - numpy ==1.9
-    - vtk
-    - qt
+    #- vtk
     - ffc ==1.6.0
     - ply
     - boost
@@ -35,8 +34,7 @@ requirements:
     - libxml2
     - swig ==3.0.7
     - numpy ==1.9
-    - vtk
-    - qt
+    #- vtk
     - ffc ==1.6.0
     - ufl ==1.6.0
     - ply
