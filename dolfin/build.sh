@@ -32,4 +32,5 @@ cmake .. \
   -DMPI_Fortran_LIBRARIES=$LIBRARY_PATH/libmpichf90.so \
   -DMPI_Fortran_INCLUDE_PATH=$INCLUDE_PATH
 
+make -j${CPU_COUNT}
 make install
