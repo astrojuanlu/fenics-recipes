@@ -1,0 +1,7 @@
+package: fenics_all
+platform: linux-64
+engine: python=2
+script:
+  - conda build swig
+  - conda build fiat
+  - conda build dolfin
