@@ -12,9 +12,12 @@ build:
 
 requirements:
   build:
+    - gcc
     - pcre
     - python
+
   run:
+    - libgcc
     - pcre
 
 test:
