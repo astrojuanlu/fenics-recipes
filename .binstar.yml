@@ -4,4 +4,6 @@ engine: python=2
 script:
   - conda build swig
   - conda build fiat
+  - conda build instant
+  - conda build ffc
   - conda build dolfin
