@@ -39,7 +39,7 @@ make -j${CPU_COUNT}
 make install
 
 # Run tests at the end
-make tests
+#make tests
 make demo
 make bench
 make runtests
