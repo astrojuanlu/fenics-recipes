@@ -43,4 +43,4 @@ make install
 #make tests
 #make demo
 #make bench
-make runtests
+#make runtests
