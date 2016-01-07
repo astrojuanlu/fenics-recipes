@@ -15,6 +15,8 @@ cmake .. \
   -DDOLFIN_ENABLE_VTK:BOOL=FALSE \
   -DDOLFIN_ENABLE_QT:BOOL=FALSE \
 \
+  -DDOLFIN_ENABLE_TESTING:BOOL=TRUE \
+\
   -DCMAKE_C_COMPILER=$CC \
   -DCMAKE_CXX_COMPILER=$CXX \
 \
@@ -35,3 +37,9 @@ cmake .. \
 
 make -j${CPU_COUNT}
 make install
+
+# Run tests at the end
+make tests
+make demo
+make bench
+make runtests

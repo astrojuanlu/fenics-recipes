@@ -27,6 +27,7 @@ requirements:
     - petsc <=3.6.2
     - petsc4py <=3.6.0
     - slepc <=3.6.2
+    - pytest  # For the tests, this is a hack
 
   run:
     - python
