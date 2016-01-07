@@ -2,9 +2,9 @@ package: fenics_all
 platform: linux-64
 engine: python=2
 script:
-  - conda build swig
-  - conda build fiat
-  - conda build instant
-  - conda build ufl
-  - conda build ffc
-  - conda build dolfin
+  - conda build -q swig
+  - conda build -q fiat
+  - conda build -q instant
+  - conda build -q ufl
+  - conda build -q ffc
+  - conda build -q dolfin
