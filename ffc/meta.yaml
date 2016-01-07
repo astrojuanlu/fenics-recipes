@@ -29,6 +29,9 @@ requirements:
     - libgfortran
 
 test:
+  requires:
+    - pytest
+  
   imports:
     - ffc
     - ffc.backends
