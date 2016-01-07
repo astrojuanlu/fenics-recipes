@@ -45,10 +45,6 @@ requirements:
     - petsc4py <=3.6.0
     - slepc <=3.6.2
 
-test:
-  imports:
-    - dolfin
-
 about:
   home: http://www.fenicsproject.org
   license: The GNU Lesser General Public License, version 3.0
