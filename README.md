@@ -22,7 +22,7 @@ fast installation or even redistribution.
 
 ```
 $ conda install conda-build
-$ conda build eigen3 swig petsc petsc4py slepc instant ufl fiat ffc dolfin fenics --python 2.7
+$ conda build eigen3 swig petsc petsc4py slepc instant ufl fiat ffc vtk dolfin fenics --python 2.7
 $ conda install fenics --use-local
 ```
 
