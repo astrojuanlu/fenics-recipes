@@ -1,0 +1,44 @@
+package:
+  name: vtk
+  version: 6.3.0
+
+source:
+  url: http://www.vtk.org/files/release/6.3/VTK-6.3.0.tar.gz
+  fn:  vtk-6.3.0.tar.gz
+  patches:
+    - dlls.patch                              [win]
+    - apple.patch                             [osx]
+
+build:
+  number: 1
+  has_prefix_files:                           [win]
+    - Lib/site-packages/vtk/__init__.py       [win]
+
+requirements:
+  build:
+    - cmake
+    - python
+  run:
+    - python
+
+test:
+  imports:
+    - vtk
+    - vtk.vtkChartsCore
+    - vtk.vtkCommonCore
+    - vtk.vtkFiltersCore
+    - vtk.vtkFiltersGeneric
+    - vtk.vtkGeovisCore
+    - vtk.vtkFiltersHybrid
+    - vtk.vtkIOCore
+    - vtk.vtkImagingCore
+    - vtk.vtkInfovisCore
+    - vtk.vtkRenderingCore
+    - vtk.vtkViewsCore
+    - vtk.vtkRenderingVolume
+    - vtk.vtkInteractionWidgets
+
+about:
+  home: http://www.vtk.org/
+  license: BSD
+  summary: VTK is an open-source, freely available software system for 3D computer graphics
