@@ -4,6 +4,10 @@ This repository contains conda recipes for the FEniCS libraries.
 The recipes work with conda-build, the build system created for
 the Anaconda Python distribution.
 
+## Differences compares to `juanlu001` repositories
+- Use `vtk` - NOTE: ONLY IF YOU HAVE `libGL.so` somewhere already.
+- Have `libadjoint` and `dolfin-adjoint` (testing required...)
+
 ## Installation from binstar (Linux 64bit)
 
 Packages are generated for linux-64 in the juanlu001 binstar channel.
@@ -24,6 +28,14 @@ fast installation or even redistribution.
 $ conda install conda-build
 $ conda build eigen3 swig petsc petsc4py slepc instant ufl fiat ffc vtk dolfin fenics --python 2.7
 $ conda install fenics --use-local
+```
+
+To install `dolfin-adjoint` and `libadjoint`, after `dolfin` is installed, in the same `conda` environment run:
+
+```
+$ conda build dolfin-adjoint libadjoint
+$ conda install dolfin-adjoint --use-local
+$ conda install libadjoint --use-local
 ```
 
 Requirements:
