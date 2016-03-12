@@ -17,23 +17,23 @@ requirements:
     - cmake
     - sphinx
     - libxml2
-    - swig ==3.0.7
-    - numpy ==1.9
+    - swig >=3.0.7
+    - numpy >=1.9
     - vtk
     - ffc ==1.6.0
     - ply
     - boost
     - eigen3
     - petsc <=3.6.2
-    - petsc4py <=3.6.0
+    # - petsc4py <=3.6.0
     - slepc <=3.6.2
 
   run:
     - python
     - openblas
     - libxml2
-    - swig ==3.0.7
-    - numpy ==1.9
+    - swig >=3.0.7
+    - numpy >=1.9
     - vtk
     - ffc ==1.6.0
     - ufl ==1.6.0
@@ -41,7 +41,7 @@ requirements:
     - boost
     - eigen3
     - petsc <=3.6.2
-    - petsc4py <=3.6.0
+    # - petsc4py <=3.6.0
     - slepc <=3.6.2
 
 test:

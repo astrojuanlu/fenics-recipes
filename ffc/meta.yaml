@@ -13,15 +13,15 @@ build:
 requirements:
   build:
     - python
-    - numpy ==1.9
-    - swig ==3.0.7
+    - numpy >=1.9
+    - swig >=3.0.7
     - gcc
     - libgfortran
 
   run:
     - python
-    - numpy ==1.9
-    - swig ==3.0.7
+    - numpy >=1.9
+    - swig >=3.0.7
     - ufl ==1.6.0
     - fiat ==1.6.0
     - instant ==1.6.0
