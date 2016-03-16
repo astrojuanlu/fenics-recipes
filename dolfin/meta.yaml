@@ -17,9 +17,9 @@ requirements:
     - cmake
     - sphinx
     - libxml2
-    - swig ==3.0.7
-    - numpy ==1.9
-    #- vtk
+    - swig >=3.0.7
+    - numpy >=1.9
+    - vtk
     - ffc ==1.6.0
     - ply
     - boost
@@ -32,9 +32,9 @@ requirements:
     - python
     - openblas
     - libxml2
-    - swig ==3.0.7
-    - numpy ==1.9
-    #- vtk
+    - swig >=3.0.7
+    - numpy >=1.9
+    - vtk
     - ffc ==1.6.0
     - ufl ==1.6.0
     - ply

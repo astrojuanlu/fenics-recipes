@@ -1,0 +1,31 @@
+package:
+  name: libadjoint
+  version: "1.6.0"
+
+source:
+  fn: libadjoint-1.6.0.tar.gz
+  url: https://bitbucket.org/quang-ha/libadjoint/downloads/libadjoint-1.6.0.tar.gz
+  md5: 684a8140f1a89d506489bdad5743ffd7
+
+build:
+  number: 2
+
+requirements:
+  build:
+    - dolfin ==1.6.0
+
+  run:
+    - dolfin ==1.6.0
+
+test:
+  requires:
+    - gcc
+
+about:
+  home: dolfin-adjoint.org
+  license: GNU Library or Lesser General Public License (LGPL)
+  summary: 'libadjoint: library for the high-level algorithmic differentiation of scientific models'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
