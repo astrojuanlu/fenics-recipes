@@ -10,6 +10,7 @@ the Anaconda Python distribution.
 [outstanding bugs](https://github.com/Juanlu001/fenics-recipes/issues)
 are no longer being fixed. Please check out any of the
 [project forks](https://github.com/Juanlu001/fenics-recipes/network)
+and [this mailing list thread](https://groups.google.com/d/msg/fenics-support/jWuLkc9VdOE/DcXgmg1nAAAJ)
 for more information.
 
 ## Installation from binstar (Linux 64bit)
