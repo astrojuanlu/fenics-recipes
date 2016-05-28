@@ -1,8 +1,16 @@
 # fenics-recipes
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 This repository contains conda recipes for the FEniCS libraries.
 The recipes work with conda-build, the build system created for
 the Anaconda Python distribution.
+
+**Note**: These recipes are no longer maintained and
+[outstanding bugs](https://github.com/Juanlu001/fenics-recipes/issues)
+are no longer being fixed. Please check out any of the
+[project forks](https://github.com/Juanlu001/fenics-recipes/network)
+for more information.
 
 ## Installation from binstar (Linux 64bit)
 
